@@ -23,20 +23,14 @@ public class CheckLoginImpl {
         ResultSet rs = null;
 
         try {
-<<<<<<< HEAD
             String sql = "select userid from user where username=? and userpass=?";
             System.out.println("username:" + username);
             System.out.println("userpass:" + userpass);
-=======
-            String sql = "select count(*) from user where username=? and userpass=?";
-
->>>>>>> 6298816045ad4ccb3efd612d5e432dc34783712e
-            pstmt = (PreparedStatement) conn.prepareStatement(sql);
+            pstmt =  conn.prepareStatement(sql);
             pstmt.setString(1, username);
             pstmt.setString(2, userpass);
 
             rs = pstmt.executeQuery();
-<<<<<<< HEAD
             boolean flg = false;
             
             while(rs.next()){
@@ -46,13 +40,7 @@ public class CheckLoginImpl {
             }
             
             System.out.println("check:"+ flg);
-=======
-
-            boolean flg = rs.next();
-            
-            System.out.println("ddd"+ flg);
->>>>>>> 6298816045ad4ccb3efd612d5e432dc34783712e
-            
+           
             return flg;
             
         } catch (SQLException e) {
