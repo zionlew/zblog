@@ -1,5 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<<<<<<< HEAD
 <% String msg = (String)request.getAttribute("msg"); %>
+=======
+<% String msg = request.getParameter("msg"); %>
+>>>>>>> 6298816045ad4ccb3efd612d5e432dc34783712e
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>

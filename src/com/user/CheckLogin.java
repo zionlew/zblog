@@ -43,7 +43,11 @@ public class CheckLogin extends HttpServlet {
         Boolean flg = dao.check(username, userpass);
         
         if (flg){
+<<<<<<< HEAD
             System.out.println("ok1");
+=======
+            System.out.println("ok");
+>>>>>>> 6298816045ad4ccb3efd612d5e432dc34783712e
             req.setAttribute("msg", "Check OK");
         } else {
             System.out.println("ng");
