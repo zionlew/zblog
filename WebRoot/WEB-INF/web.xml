@@ -9,4 +9,23 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+    <servlet>
+        <servlet-name>logincheck</servlet-name>
+        <servlet-class>com.user.CheckLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logincheck</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+  
+    <filter>
+        <filter-name>CharacterFilter</filter-name>
+        <filter-class>com.util.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>  
+
 </web-app>
