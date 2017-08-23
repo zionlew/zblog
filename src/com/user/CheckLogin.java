@@ -23,7 +23,7 @@ public class CheckLogin extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {        
-        resp.sendRedirect("main1.jsp");
+        this.doPost(req, resp);
     }
 
     /* 
@@ -50,8 +50,7 @@ public class CheckLogin extends HttpServlet {
             req.setAttribute("msg", "Check NG");
         }
         
-       //resp.sendRedirect("riyu/word.jsp");
-        req.getRequestDispatcher("riyu/word.jsp").forward(req, resp);
+        resp.sendRedirect("main.jsp");
    }
 
         
