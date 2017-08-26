@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------
+
+File:           main.css
+Version:        1.0
+MadeBy:         Huan.L
+Updated:        2017-8-26
+
+Copyright (c) 
+
+-----------------------------------------------------------------------
+/*  init  */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+
+
+/* Base
+---------------------------------------------------------------------*/
+
+body {
+    font: 10px consolas;    
+    line-height:1.5;
+    margin:0 auto;
+}
+
+
+/* form
+-------------------------*/
+input {
+	font: 10px consolas;	
+}
+
+
+#top {
+	height:100px;	
+}
